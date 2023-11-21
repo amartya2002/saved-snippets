@@ -4,7 +4,7 @@ const withNextra = require('nextra')({
   });
 
   const isProduction = process.env.NODE_ENV === "production";
-  const assetPrefix = isProduction ? "/nextra-template-tailwind-v2" : "";
+  const assetPrefix = isProduction ? "/entropyui" : "";
 
   module.exports = {
     ...withNextra(),
