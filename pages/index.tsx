@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-
+import 'tailwindcss/tailwind.css'
 const index = () => {
   return (
 //     <section className="flex relative bg-[#f5f5f5] items-center justify-center">
@@ -146,10 +146,10 @@ const index = () => {
       <div className="relative max-w-6xl p-10 overflow-hidden border-t-2 border-orange-500 bg-white rounded-3xl lg:p-20 shadow-2xl">
         <div className="relative max-w-lg">
           <div><p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
-hello
+Entropy UI
 </p>
 <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
-You can create stunning documentation using Nextra, but the page structure and configuration can become convoluted at times. This template can serve as a convenient starting point.
+Entropy UI is a versatile and powerful UI component library designed to streamline your web development workflow
 </p>
 </div>
           <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
