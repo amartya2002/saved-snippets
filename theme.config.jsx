@@ -5,7 +5,7 @@ export default {
   logo: <span>Entropy UI</span>,
 
   project: {
-    link: "https://github.com/shuding/nextra",
+    link: "https://amartya2002.github.io/entropyui/",
   
   },
 
@@ -25,8 +25,8 @@ export default {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta property="og:title" content="Nextra" />
-      <meta property="og:description" content="The next site builder" />
+      <meta property="og:title" content="Entropy" />
+      <meta property="og:description" content="Tailwind Component Library." />
     </>
   ),
 
@@ -54,10 +54,8 @@ export default {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{' '}
-        <a href="https://nextra.site" target="_blank">
-          Nextra
-        </a>
-        .
+       
+          Entropy UI
       </span>
     )
   },
