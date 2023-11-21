@@ -62,5 +62,5 @@ export default {
     )
   },
 
-  gitTimestamp: true,
+  // gitTimestamp: true,
 };

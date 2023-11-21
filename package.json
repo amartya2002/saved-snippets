@@ -11,8 +11,8 @@
     "lint": "next lint --max-warnings=0",
     "type-check": "tsc",
     "deploy": "gh-pages -d out -t true",
-    "cds": "git add . && git commit -m 'Awesome' && npm run export && npm run deploy",
-    "ds": "npm run export && npm run deploy"
+    "cds": "git add . && git commit -m 'Awesome' && pnpm run export && pnpm run deploy",
+    "ds": "pnpm run export && pnpm run deploy"
 
   },
   "dependencies": {
