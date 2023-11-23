@@ -1,0 +1,23 @@
+.splashContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    opacity: 0.9;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .showSplash {
+    opacity: 1;
+  }
+  
+  .splashContent {
+    text-align: center;
+  }
+  
+ 
