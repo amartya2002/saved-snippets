@@ -1,9 +1,10 @@
 import { useRouter } from 'next/router'
+import Logo from 'components/Logo'
 
 // import { ThemeSwitch } from './components/Theme-toggle';
 export default {
 
-  logo: <span>Entropy UI</span>,
+  logo: <Logo/>,
 
   project: {
     link: "https://amartya2002.github.io/entropyui/",
