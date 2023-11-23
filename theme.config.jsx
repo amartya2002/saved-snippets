@@ -1,33 +1,19 @@
-import { useRouter } from 'next/router'
-import Logo from 'components/Logo'
+import { useRouter } from "next/router";
+import Logo from "components/Logo";
 
-// import { ThemeSwitch } from './components/Theme-toggle';
 export default {
 
-  logo: <Logo/>,
+  logo: <Logo />,
 
   project: {
     link: "https://amartya2002.github.io/entropyui/",
-  
   },
 
-
-
-   navbar: {
+  navbar: {
     extraContent: (
       <p>hello</p>
-      // <ThemeSwitch/>
-    )
-    },
-  //   )
-  // },
-
-  // useNextSeoProps() {
-  //   return {
-  //     title : 'This is my title',
-  //     titleTemplate : '%s | Next SEO'
-  //   }
-  // },
+    ),
+  },
 
   head: (
     <>
@@ -37,18 +23,14 @@ export default {
     </>
   ),
 
-  // primaryHue:{ dark: 20, light: 200 },
-  // primarySaturation:{ dark: 50, light: 50 },
-
   useNextSeoProps() {
-    const { asPath } = useRouter()
-    if (asPath !== '/') {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
       return {
-        titleTemplate: '%s – Docs Template'
-      }
+        titleTemplate: "%s – Entropy UI",
+      };
     }
   },
-
 
   darkMode: true,
 
@@ -56,16 +38,8 @@ export default {
     toggleButton: true,
   },
 
-  
-
   footer: {
-    text: (
-      <span>
-        MIT {new Date().getFullYear()} ©{' '}
-       
-          Entropy UI
-      </span>
-    )
+    text: <span>MIT {new Date().getFullYear()} © Entropy UI</span>,
   },
 
   // gitTimestamp: true,

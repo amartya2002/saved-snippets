@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import Splash from '../components/Splash';
 import 'tailwindcss/tailwind.css'
 const index = () => {
   return (

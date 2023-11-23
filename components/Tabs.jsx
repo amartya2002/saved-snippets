@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { SlEyeglass } from "react-icons/sl";
-
 const ViewCodeTabs = ({ children }) => {
   const [activeTab, setActiveTab] = useState(children[0].props.label);
   const [overlayStyles, setOverlayStyles] = useState({});

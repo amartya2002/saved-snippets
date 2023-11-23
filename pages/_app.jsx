@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import "../styles/globals.css"
 
 import Splash from '../components/Splash';
-import type { AppProps } from 'next/app';
+// import type { AppProps } from 'next/app';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, [isLoading]);
 
   return (
-    <div className='bg hideSplash '>
+    <div className='bg  '>
       {isLoading ? <Splash finishLoading={() => setIsLoading(false)} /> : <Component {...pageProps} />}
     </div>
   );
