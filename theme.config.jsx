@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
-import Navbar from "./components/Navbar"
+
+// import { ThemeSwitch } from './components/Theme-toggle';
 export default {
 
   logo: <span>Entropy UI</span>,
@@ -9,9 +10,14 @@ export default {
   
   },
 
-  // navbar: {
-  //   component: (
-  //     <Navbar/>
+
+
+   navbar: {
+    extraContent: (
+      <p>hello</p>
+      // <ThemeSwitch/>
+    )
+    },
   //   )
   // },
 
@@ -43,12 +49,13 @@ export default {
   },
 
 
-  // darkMode: true,
+  darkMode: true,
+
   sidebar: {
     toggleButton: true,
-  
   },
 
+  
 
   footer: {
     text: (

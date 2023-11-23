@@ -11,21 +11,25 @@ specifiers:
   gh-pages: ^6.0.0
   lint-staged: ^14.0.1
   next: ^13.3.1
+  next-themes: ^0.2.1
   nextra: ^2.4.2
   nextra-theme-docs: ^2.4.2
   postcss: ^8.4.23
   react: ^18.2.0
   react-dom: ^18.2.0
+  react-icons: ^4.12.0
   tailwindcss: ^3.3.1
   typescript: 5.0.4
 
 dependencies:
   gh-pages: 6.1.0
   next: 13.5.6_biqbaboplfbrettd7655fr4n2y
+  next-themes: 0.2.1_geniznlzs656uacumbd4vvx6ke
   nextra: 2.13.2_geniznlzs656uacumbd4vvx6ke
   nextra-theme-docs: 2.13.2_qg7k3cw6vhfhz2o7kqmv4qjg2m
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.12.0_react@18.2.0
 
 devDependencies:
   '@types/node': 20.2.5
@@ -4470,6 +4474,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons/4.12.0_react@18.2.0:
+    resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is/16.13.1:

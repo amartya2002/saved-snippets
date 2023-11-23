@@ -9,7 +9,8 @@ import ButtonSizesRDR from "../../data/Buttons/ButtonSizesRDR.jsx"
 import ButtonSizesHTML from "../../data/Buttons/ButtonSizesHTML.md"
 import ButtonSizesJSX from "../../data/Buttons/ButtonSizesJSX.md"
 
-
+import { SlEye } from "react-icons/sl";
+import { HiOutlineCodeBracket } from "react-icons/hi2";
 
 
 
@@ -17,16 +18,16 @@ import ButtonSizesJSX from "../../data/Buttons/ButtonSizesJSX.md"
 
 # Buttons
 
-    <p class='text-2xl my-4 text-blue-500'>Primary</p>
+    <p class='text-gxl my-4 text-gray-500 font-medium'>Primary</p>
     {/* ## Primary */}
 
 
        <ViewCodeTabs>
-             <ViewCodeTab label="View">
+             <ViewCodeTab label="View" icon={<SlEye/>}>
               <ButtonPrimaryRDR />
               </ViewCodeTab>
 
-        <ViewCodeTab label="Code">
+        <ViewCodeTab label="Code" icon={<HiOutlineCodeBracket/>}>
                 <Tabs items={['HTML', 'JSX', 'TSX']}>
                   <Tabs.Tab><ButtonPrimaryHTML /></Tabs.Tab>
                   <Tabs.Tab><ButtonPrimaryJSX /></Tabs.Tab>
@@ -37,7 +38,7 @@ import ButtonSizesJSX from "../../data/Buttons/ButtonSizesJSX.md"
 
 ---
 
-    <p class='text-2xl my-4 text-blue-500'>Sizes</p>
+    <p class='text-xl my-4 text-gray-500 font-medium'>Sizes</p>
     {/* ## Sizes */}
 
 
@@ -56,8 +57,6 @@ import ButtonSizesJSX from "../../data/Buttons/ButtonSizesJSX.md"
        </ViewCodeTabs>
 
 ---
-
-
 
 
 
