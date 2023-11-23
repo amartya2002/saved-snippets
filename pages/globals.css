@@ -1,0 +1,26 @@
+/* globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark .bg4{
+    opacity: 1;
+    background-image:  linear-gradient(#35000042 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #43020242 1.2000000000000002px, #111 1.2000000000000002px);
+    background-size: 80px 75px;
+}
+
+.light .bg{
+    
+   
+    opacity: 1;
+    background-image:  linear-gradient(#a2a2a20d 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(to right, #a2a2a20d 1.2000000000000002px, #ffffff 1.2000000000000002px);
+    background-size: 80px 75px;
+}
+
+.dark .bg{
+    background-color: #000000;
+opacity: 1;
+background-image: radial-gradient(#282828 0.8500000000000001px, #111 0.8500000000000001px);
+background-size: 17px 17px;
+}
