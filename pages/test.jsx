@@ -5,7 +5,7 @@ import { Card, CardBody } from '/components/Card';
 
 export default function App() {
   return (
-    <div className="mt-12 ">
+    <div class="mt-12 ">
       <Tabs>
         <Tab title="Photos">
           <Card>

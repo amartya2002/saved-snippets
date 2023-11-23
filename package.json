@@ -13,7 +13,6 @@
     "deploy": "gh-pages -d out -t true",
     "cds": "git add . && git commit -m 'Awesome' && pnpm run export && pnpm run deploy",
     "ds": "pnpm run export && pnpm run deploy"
-
   },
   "dependencies": {
     "gh-pages": "^6.0.0",

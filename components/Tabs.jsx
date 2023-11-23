@@ -1,59 +1,92 @@
-// components/Tabs.js
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
-/**
- * Individual Tab Component
- * @param {Object} props - Component properties
- * @returns {React.ReactNode} - Tab content
- */
-const Tab = ({ children }) => {
-  return <>{children}</>;
-};
+const ViewCodeTabs = ({ children }) => {
+  const [activeTab, setActiveTab] = useState(children[0].props.label);
+  const tabsRef = useRef(null);
 
-/**
- * Tabs Component
- * @param {Object} props - Component properties
- * @param {string} props.ariaLabel - Aria label for accessibility
- * @param {React.ReactNode} props.children - Tab components
- * @returns {React.ReactNode} - Tabs component
- */
-const Tabs = ({ ariaLabel, children }) => {
-  // State to manage the active tab
-  const [activeTab, setActiveTab] = useState(0);
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const totalTabs = React.Children.count(children);
+        let newIndex;
+        if (e.key === 'ArrowRight') {
+          newIndex = (getIndex(activeTab) + 1) % totalTabs;
+        } else {
+          newIndex = (getIndex(activeTab) - 1 + totalTabs) % totalTabs;
+        }
+        setActiveTab(getLabel(newIndex));
+      }
+    };
 
-  // Map over children to render tab buttons
-  const tabButtons = React.Children.map(children, (child, index) => {
-    const { key, title } = child.props;
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [activeTab, children]);
 
-    return (
-      <button
-        key={key}
-        onClick={() => setActiveTab(index)}
-        className={`px-4 py-1.5 focus:outline-none  ${
-          index === activeTab
-            ? 'bg-white rounded-xl  shadow text-gray-700'
-            : ' text-slate-500'
-        }`}
-      >
-        {title}
-      </button>
-    );
-  });
+  const getIndex = (label) => {
+    return children.findIndex((child) => child.props.label === label);
+  };
+
+  const getLabel = (index) => {
+    return children[index].props.label;
+  };
+
+  const handleClick = (e, newActiveTab) => {
+    e.preventDefault();
+    setActiveTab(newActiveTab);
+  };
 
   return (
     <>
-   
-      {/* Container for tab buttons */}
-      <div className="inline-block bg-gray-200 rounded-xl p-1 space-x-2">
-        {tabButtons}
+      <div className="max-w-[200px]">
+        <div className="flex p-1 bg-gray-100 dark:bg-gray-700 rounded-xl" ref={tabsRef} role="tablist" aria-label="Tabs">
+          {children.map((child) => (
+            <button
+              key={child.props.label}
+              className={`${
+                activeTab === child.props.label
+                  ? 'bg-white bg-gray-500 rounded-xl transition duration-300 ease-in-out text-black dark:text-white '
+                  : 'text-gray-400'
+              } flex-1 font-medium py-1.5 outline-none`}
+              onClick={(e) => handleClick(e, child.props.label)}
+              role="tab"
+              aria-selected={activeTab === child.props.label ? 'true' : 'false'}
+              tabIndex={activeTab === child.props.label ? '0' : '-1'}
+            >
+              {child.props.label}
+            </button>
+          ))}
+        </div>
       </div>
-      
 
-      {/* Container for active tab content */}
-      <div className="mt-4">{React.Children.toArray(children)[activeTab]}</div>
-    
+      <div className="mt-3">
+        {children.map((child) => (
+          <div
+            key={child.props.label}
+            className={`${
+              activeTab === child.props.label ? 'block opacity-100' : 'hidden opacity-0'
+            }`}
+            role="tabpanel"
+            id={`tabpanel-${child.props.label}`}
+            aria-labelledby={`tab-${child.props.label}`}
+            tabIndex={activeTab === child.props.label ? '0' : '-1'}
+          >
+            {child.props.children}
+          </div>
+        ))}
+      </div>
     </>
   );
 };
 
-export { Tab, Tabs };
+const ViewCodeTab = ({ label, children }) => {
+  return (
+    <div label={label} className="hidden">
+      {children}
+    </div>
+  );
+};
+
+export { ViewCodeTabs, ViewCodeTab };

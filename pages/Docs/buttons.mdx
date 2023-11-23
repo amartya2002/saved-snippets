@@ -1,0 +1,67 @@
+import { ViewCodeTabs, ViewCodeTab } from '/components/Tabs';
+import { Tabs } from 'nextra/components'
+
+import ButtonPrimaryRDR from '../../data/Buttons/ButtonPrimaryRDR.jsx'
+import ButtonPrimaryJSX from '../../data/buttons/ButtonPrimaryJSX.md'
+import ButtonPrimaryHTML from '../../data/buttons/ButtonPrimaryHTML.md'
+
+import ButtonSizesRDR from "../../data/Buttons/ButtonSizesRDR.jsx"
+import ButtonSizesHTML from "../../data/Buttons/ButtonSizesHTML.md"
+import ButtonSizesJSX from "../../data/Buttons/ButtonSizesJSX.md"
+
+
+
+
+
+ 
+
+# Buttons
+
+    <p class='text-2xl my-4 text-blue-500'>Primary</p>
+    {/* ## Primary */}
+
+
+       <ViewCodeTabs>
+             <ViewCodeTab label="View">
+              <ButtonPrimaryRDR />
+              </ViewCodeTab>
+
+        <ViewCodeTab label="Code">
+                <Tabs items={['HTML', 'JSX', 'TSX']}>
+                  <Tabs.Tab><ButtonPrimaryHTML /></Tabs.Tab>
+                  <Tabs.Tab><ButtonPrimaryJSX /></Tabs.Tab>
+                  <Tabs.Tab>Not available</Tabs.Tab>
+                </Tabs>
+          </ViewCodeTab>
+       </ViewCodeTabs>
+
+---
+
+    <p class='text-2xl my-4 text-blue-500'>Sizes</p>
+    {/* ## Sizes */}
+
+
+       <ViewCodeTabs>
+             <ViewCodeTab label="View">
+              <ButtonSizesRDR />
+              </ViewCodeTab>
+
+        <ViewCodeTab label="Code">
+                <Tabs items={['HTML', 'JSX', 'TSX']}>
+                  <Tabs.Tab><ButtonSizesHTML/></Tabs.Tab>
+                  <Tabs.Tab><ButtonSizesJSX/></Tabs.Tab>
+                  <Tabs.Tab>Not available</Tabs.Tab>
+                </Tabs>
+          </ViewCodeTab>
+       </ViewCodeTabs>
+
+---
+
+
+
+
+
+
+
+
+

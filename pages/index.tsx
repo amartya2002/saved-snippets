@@ -3,25 +3,25 @@ import React from 'react';
 import 'tailwindcss/tailwind.css'
 const index = () => {
   return (
-//     <section className="flex relative bg-[#f5f5f5] items-center justify-center">
-//       <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 lg:py-32 max-w-7xl md:px-12">
+//     <section class="flex relative bg-[#f5f5f5] items-center justify-center">
+//       <div class="relative items-center w-full px-5 py-12 mx-auto lg:px-16 lg:py-32 max-w-7xl md:px-12">
 //         <div>
-//           <div className="text-center">
-//             <span className="w-auto"><span className="font-semibold text-[#4354ff] text-sm uppercase">Open Source</span></span>
-//             <p className="mt-8 text-3xl font-extrabold tracking-tight text-black md:text-5xl">
+//           <div class="text-center">
+//             <span class="w-auto"><span class="font-semibold text-[#4354ff] text-sm uppercase">Open Source</span></span>
+//             <p class="mt-8 text-3xl font-extrabold tracking-tight text-black md:text-5xl">
 //              Nextra Docs <br /> Template
 //             </p>
-//             <p className="max-w-xl mx-auto mt-4 text-base lg:text-xl text-slate-500">
+//             <p class="max-w-xl mx-auto mt-4 text-base lg:text-xl text-slate-500">
 //               Bridging the gap between designers and coders with early access and early feedback.
 //             </p>
 //           </div>
 //         </div>
-//         <div className="max-w-lg mx-auto mt-24">
-//           <ul className="space-y-3" role="list">
+//         <div class="max-w-lg mx-auto mt-24">
+//           <ul class="space-y-3" role="list">
 //             <li>
-//               <div className="relative flex items-start p-4 space-x-3 bg-white shadow group rounded-2xl">
-//                 <div className="flex-shrink-0">
-//                   <span className="justify-center inline-flex items-center">
+//               <div class="relative flex items-start p-4 space-x-3 bg-white shadow group rounded-2xl">
+//                 <div class="flex-shrink-0">
+//                   <span class="justify-center inline-flex items-center">
 //                     {/* Your SVG code here */}
 
 //                     <svg fill="none" height="100" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
@@ -62,23 +62,23 @@ const index = () => {
 
 //                   </span>
 //                 </div>
-//                 <div className="flex-1 min-w-0">
-//                   <div className="text-lg font-medium text-gray-900">
-//                     <a className="flex justify-between w-full" href="#_">
-//                       <span className="absolute inset-0" aria-hidden="true"></span> SVG Gradients
-//                       <span className="font-medium bg-gray-100 inline-flex items-center px-2.5 py-0.5 rounded-full text-gray-800 text-xs">AI</span>
+//                 <div class="flex-1 min-w-0">
+//                   <div class="text-lg font-medium text-gray-900">
+//                     <a class="flex justify-between w-full" href="#_">
+//                       <span class="absolute inset-0" aria-hidden="true"></span> SVG Gradients
+//                       <span class="font-medium bg-gray-100 inline-flex items-center px-2.5 py-0.5 rounded-full text-gray-800 text-xs">AI</span>
 //                     </a>
 //                   </div>
-//                   <p className="mt-3 text-gray-500">
+//                   <p class="mt-3 text-gray-500">
 //                     Quick access to ChatGPT from any website, it's free and open source!
 //                   </p>
 //                 </div>
 //               </div>
 //             </li>
 //             <li>
-//               <div className="relative flex items-start p-4 space-x-3 bg-white shadow group rounded-2xl">
-//                 <div className="flex-shrink-0">
-//                 <span className="justify-center inline-flex items-center">
+//               <div class="relative flex items-start p-4 space-x-3 bg-white shadow group rounded-2xl">
+//                 <div class="flex-shrink-0">
+//                 <span class="justify-center inline-flex items-center">
 //   <svg fill="none" height="100" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg">
 //     <g filter="url(#filter0_d_22_710)">
 //       <path d="M9.375 39.5625C9.375 28.8845 9.375 23.5455 11.486 19.4817C13.2649 16.0571 16.0572 13.2649 19.4817 11.486C23.5456 9.37497 28.8846 9.37497 39.5625 9.37497H60.4375C71.1155 9.37497 76.4544 9.37497 80.5183 11.486C83.9428 13.2649 86.7351 16.0571 88.514 19.4817C90.625 23.5455 90.625 28.8845 90.625 39.5625V60.4375C90.625 71.1154 90.625 76.4544 88.514 80.5182C86.7351 83.9428 83.9428 86.7351 80.5183 88.514C76.4544 90.625 71.1155 90.625 60.4375 90.625H39.5625C28.8846 90.625 23.5456 90.625 19.4817 88.514C16.0572 86.7351 13.2649 83.9428 11.486 80.5182C9.375 76.4544 9.375 71.1154 9.375 60.4375V39.5625Z" fill="#060A15"></path>
@@ -116,14 +116,14 @@ const index = () => {
 // </span>
 
 //                 </div>
-//                 <div className="flex-1 min-w-0">
-//                   <div className="text-lg font-medium text-gray-900">
-//                     <a className="flex justify-between w-full" href="#_">
-//                       <span className="absolute inset-0" aria-hidden="true"></span> Onda backgrounds
-//                       <span className="font-medium bg-gray-100 inline-flex items-center px-2.5 py-0.5 rounded-full text-gray-800 text-xs">SVG</span>
+//                 <div class="flex-1 min-w-0">
+//                   <div class="text-lg font-medium text-gray-900">
+//                     <a class="flex justify-between w-full" href="#_">
+//                       <span class="absolute inset-0" aria-hidden="true"></span> Onda backgrounds
+//                       <span class="font-medium bg-gray-100 inline-flex items-center px-2.5 py-0.5 rounded-full text-gray-800 text-xs">SVG</span>
 //                     </a>
 //                   </div>
-//                   <p className="mt-3 text-gray-500">
+//                   <p class="mt-3 text-gray-500">
 //                     Deliver the best experience to your Visitors &amp; turn them into Customers. Build your Website now!
 //                   </p>
 //                 </div>
@@ -138,25 +138,25 @@ const index = () => {
 
 
 
-<section className="bg-gradient-to-l from-gray-300 to-white h-screen ">
+<section class="bg-gradient-to-l from-gray-300 to-white h-screen ">
 
-<div className=" px-5 py-12 flex h-screen  md:px-12 lg:px-16 max-w-7xl mx-auto gap-8">
-  <div className="flex w-full mx-auto">
-    <div className="relative inline-flex items-center m-auto align-middle">
-      <div className="relative max-w-6xl p-10 overflow-hidden border-t-2 border-orange-500 bg-white rounded-3xl lg:p-20 shadow-2xl">
-        <div className="relative max-w-lg">
-          <div><p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">
+<div class=" px-5 py-12 flex h-screen  md:px-12 lg:px-16 max-w-7xl mx-auto gap-8">
+  <div class="flex w-full mx-auto">
+    <div class="relative inline-flex items-center m-auto align-middle">
+      <div class="relative max-w-6xl p-10 overflow-hidden border-t-2 border-orange-500 bg-white rounded-3xl lg:p-20 shadow-2xl">
+        <div class="relative max-w-lg">
+          <div><p class="text-2xl font-medium tracking-tight text-black sm:text-4xl">
 Entropy UI
 </p>
-<p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
+<p class="max-w-xl mt-4 text-base tracking-tight text-gray-600">
 Entropy UI is a versatile and powerful UI component library designed to streamline your web development workflow
 </p>
 </div>
-          <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
-            <Link href="Docs/introduction" className="items-center justify-center w-full px-4 py-2 text-center text-gray-200 duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
+          <div class="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
+            <Link href="Docs/introduction" class="items-center justify-center w-full px-4 py-2 text-center text-gray-200 duration-200 bg-black border-2 border-black rounded-full inline-flex hover:bg-transparent hover:border-black hover:text-black focus:outline-none lg:w-auto focus-visible:outline-black text-sm focus-visible:ring-black">
              Go to Docs 
             </Link>
-            <Link target='_blank' href="https://nextra.site/" className="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
+            <Link target='_blank' href="https://nextra.site/" class="inline-flex items-center justify-center text-sm font-semibold text-black duration-200 hover:text-blue-500 focus:outline-none focus-visible:outline-gray-600">
               Learn more
             </Link>
           </div>
@@ -178,7 +178,7 @@ Entropy UI is a versatile and powerful UI component library designed to streamli
 
   
 </div>
-{/* <p className='text-center text-xl font-semibold text-gray-600'>Happy Coding!</p> */}
+{/* <p class='text-center text-xl font-semibold text-gray-600'>Happy Coding!</p> */}
 
 </section>
 
