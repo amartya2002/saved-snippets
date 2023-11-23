@@ -39,7 +39,7 @@ const ViewCodeTabs = ({ children }) => {
               id={`tab-button-${child.props.label}`}
               className={`${
                 activeTab === child.props.label
-                  ? "dark:text-white text-blue-500 " // Set the text color for the active tab
+                  ? "dark:text-blue-400 text-blue-600 duration-[600ms] " // Set the text color for the active tab
                   : "text-gray-400"
               } flex-1 items-center font-medium py-1.5`}
               onClick={(e) => handleClick(e, child.props.label)}
