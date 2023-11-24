@@ -7,7 +7,32 @@
   "fruits": {
     "title": "Fruits",
     "type": "page"
+  },
+
+  "vision": {
+    "title": "About us",
+    "theme": {
+      "type": "page",
+      "layout": "full",
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false
+    },
+
+    "type": "menu",
+    "items": {
+      "vision": {
+        "title": "Our Vision",
+        "href": "/vision",
+        "newWindow": true
+      },
+
+      "contact": {
+        "title": "Contact Us",
+        "href": "mailto:hi@example.com"
+      }
+    }
   }
-
-
 }

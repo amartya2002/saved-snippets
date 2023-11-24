@@ -28,11 +28,11 @@ export default function Splash({ finishLoading }) {
       }`}
     >
       <div className="flex gap-6 flex-col justify-center items-center h-screen">
-        <div className="rounded-2xl borer-4 borde-t-4 bg-gradient-to-r from-red-300 to-violet-300  border-violet-500 h-12 w-12  animate-bounce mb-3 shadow-2xl"></div>
+        <div className="rounded-2xl borer-4 borde-t-4 bg-gradient-to-r from-red-300 to-violet-300  border-violet-500 h-12 w-12 animate-spin animate-bounce mb-3 shadow-2xl"></div>
         <p
           className={`${styles.splashText} text-4xl text-gray-300 animate-pulse`}
         >
-          Favourite Snippets
+          Entropy UI
         </p>
       </div>
     </div>
