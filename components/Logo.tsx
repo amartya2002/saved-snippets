@@ -20,7 +20,7 @@ export default function Logo() {
 </svg>
 
             <p className='font-medium text-gray-500'>
-                Entropy UI
+                Favourite Snippets
             </p>
         </div>
     )
