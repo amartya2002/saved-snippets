@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import "../styles/globals.css"
+import 'nextra-theme-docs/style.css'
+import "./globals.css"
 
 import Splash from '../components/Splash';
 // import type { AppProps } from 'next/app';
